@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Grade Average</title>
+</head>
+<body>
+    <script>
+        var numOfCourses = prompt("How many courses did you finish?");
+        numOfCourses = parseInt(numOfCourses);
+
+        if (isNaN(numOfCourses) || numOfCourses <= 0) {
+            document.write("<p>Invalid Input!</p>");
+        } else {
+            var courseMarks = [];
+            for (var i = 1; i <= numOfCourses; i++) {
+                var mark = prompt("Enter your mark for course " + i);
+                mark = parseFloat(mark);
+
+                if (!isNaN(mark) && mark >= 0 && mark <= 100) {
+                    courseMarks.push(mark);
+                } else {
+                    document.write("<p>Invalid Input for course " + i + "</p>");
+                    break;
+                }
+            }
+
+            if (courseMarks.length === numOfCourses) {
+                var total = 0;
+                for (var i = 0; i < courseMarks.length; i++) {
+                    total += courseMarks[i];
+                }
+                var average = total / courseMarks.length;
+                document.write("<p>Your average grade is: " + average.toFixed(2) + "</p>");
+            }
+        }
+    </script>
+</body>
+</html>

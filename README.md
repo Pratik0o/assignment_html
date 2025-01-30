@@ -19,10 +19,6 @@ The JavaScript code in this project:
 ✔️ Uses `if-else` statements for validation.  
 ✔️ Implements both `while` and `for` loops.  
 
-## 📸 Submission Screenshots  
-For submission, please refer to the PDF file containing:  
-📷 Folder structure inside **Visual Studio Code**  
-📷 Console output after executing the JavaScript code  
 
 ## 📌 Instructor Details  
 **Instructor:** Anmar Jarjees  
